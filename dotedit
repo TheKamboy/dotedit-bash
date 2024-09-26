@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# VARIABLES
+folders=""
+usefoldersfromconfig=true
+editor=$EDITOR
+debug=false
+# VARIABLES
+
+if ! which fzf > /dev/null 2>&1; then
+  echo "FZF is not installed! Please install FZF."
+  exit 1
+fi
+
+if [ "$usefoldersfromconfig" = "true" ]; then
+  getconfdirs=$(find ~/.config/ -maxdepth 1 -type d -print)
+  folders="$folders $getconfdirs"
+fi
+
+fselect=$(echo "$folders" | fzf --prompt="Folder> " --height 40% --layout reverse --border)
+
+if [ "$fselect" = "" ]; then
+  echo "No folder was selected! Exiting..."
+  exit 1
+fi
+
+if [ "$debug" = "true" ]; then
+  echo "A folder was selected. folder=$fselect"
+fi
+
+(
+cd "$fselect"
+filesel=$(fzf --prompt="File> " --height 40% --layout reverse --border)
+if [ "$filesel" = "" ]; then
+  echo "No file was selected! Exiting..."
+  exit 1
+fi
+if [ "$debug" = "true" ]; then
+  echo "A file was selected. file=$filesel"
+fi
+$editor $filesel
+)
