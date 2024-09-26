@@ -14,7 +14,7 @@ fi
 
 if [ "$usefoldersfromconfig" = "true" ]; then
   getconfdirs=$(find ~/.config/ -maxdepth 1 -type d -print)
-  folders="$folders $getconfdirs"
+  folders="$getconfdirs $folders"
 fi
 
 fselect=$(echo "$folders" | fzf --prompt="Folder> " --height 40% --layout reverse --border)
