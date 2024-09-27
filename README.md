@@ -50,6 +50,7 @@ You can configure it with the variables in it.
 folders=""
 usefoldersfromconfig=true
 editor=$EDITOR
+allowmorefileselcts=true
 debug=false
 # VARIABLES
 ```
@@ -58,3 +59,4 @@ debug=false
 - usefoldersfromconfig: adds folders from your `.config` into the search
 - editor: the editor you want to use
 - debug: more verbose
+- allowmorefileselcts: enables selecting another file/folder on editor close
