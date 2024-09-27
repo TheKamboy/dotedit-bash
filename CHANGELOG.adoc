@@ -1,0 +1,12 @@
+= CHANGELOG
+This file will be used to keep the changes of Dot Edit.
+
+== v1.0.0 - Sep 26, 2024
+* Fixed Bug where selecting `/home/<USER>/.config/` wouldn't work
+* Updated the way searching `.config` was done
+* Replaced Gum completly with FZF
+
+== Oldest (Before GitHub Release) - Sep 23?, 2024
+* Added an option that adds folders from `.config` to the folder select
+* Added debug mode
+* Created Dot Edit

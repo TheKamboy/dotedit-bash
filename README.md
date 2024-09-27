@@ -4,6 +4,9 @@
 
 A very simple dot editor that I created.
 
+## CHANGELOG
+The changelog is stored in [changelog.adoc](./CHANGELOG.adoc).
+
 ## Requirements
 There is only one lol.
 
