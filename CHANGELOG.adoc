@@ -3,19 +3,19 @@ KamFurDev <kamboydev@tuta.io>
 
 This file will be used to keep the changes of Dot Edit.
 
-== v1.1.1 - Sep 27, 2024
+== v1.1.1 - 09/27/2024
 * Changed height of `allowmorefileselcts`.
 
-== v1.1.0 - Sep 26, 2024
+== v1.1.0 - 09/26/2024
 * Added a new option: `allowmorefileselcts` (just noticed i miss spelled select but whatever)
 ** Basically allows you to select another file (or a different folder) if you want to (activates when closing your editor)
 
-== v1.0.0 - Sep 26, 2024
+== v1.0.0 - 09/26/2024
 * Fixed Bug where selecting `/home/<USER>/.config/` wouldn't work
 * Updated the way searching `.config` was done
 * Replaced Gum completly with FZF
 
-== Oldest (Before GitHub Release) - Sep 23?, 2024
+== Oldest (Before GitHub Release) - 09/23?/2024
 * Added an option that adds folders from `.config` to the folder select
 * Added debug mode
 * Created Dot Edit
