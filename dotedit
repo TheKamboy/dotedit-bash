@@ -55,7 +55,7 @@ if [ "$allowmorefileselcts" = "true" ]; then
     if ! fileselection ; then
       exit 1
     fi
-    yesno=$(echo -e "Yes\nNo\nSelect Another Folder" | fzf --prompt="Open Another File? " --height 20% --layout reverse --border)
+    yesno=$(echo -e "Yes\nNo\nSelect Another Folder" | fzf --prompt="Open Another File? " --height 5% --layout reverse --border)
 
     if [ "$yesno" = "No" ]; then
       exit 0

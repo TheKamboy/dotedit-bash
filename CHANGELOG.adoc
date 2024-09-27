@@ -1,6 +1,9 @@
 = CHANGELOG
 This file will be used to keep the changes of Dot Edit.
 
+== v1.1.1 - Sep 27, 2024
+* Changed height of `allowmorefileselcts`.
+
 == v1.1.0 - Sep 26, 2024
 * Added a new option: `allowmorefileselcts` (just noticed i miss spelled select but whatever)
 ** Basically allows you to select another file (or a different folder) if you want to (activates when closing your editor)
