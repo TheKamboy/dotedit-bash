@@ -1,4 +1,6 @@
 = CHANGELOG
+KamFurDev <kamboydev@tuta.io>
+
 This file will be used to keep the changes of Dot Edit.
 
 == v1.1.1 - Sep 27, 2024
